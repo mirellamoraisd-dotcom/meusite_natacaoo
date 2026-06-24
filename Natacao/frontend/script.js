@@ -1,6 +1,6 @@
 const API = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
 ? "http://localhost:3000"
-: "https://renderalgumacoisa.onrender.com";
+: "https://meusite-natacaoo.onrender.com";
  
 async function cadastrarAluno(event) {
     event.preventDefault();
@@ -23,7 +23,7 @@ async function cadastrarAluno(event) {
     });
  
     const dados = await resposta.json();
- 
+    
     if (!resposta.ok) {
         alert(dados.erro);
         return;
